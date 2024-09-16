@@ -52,5 +52,9 @@ public class UserController {
 	public AppUser findByEmail(@PathVariable String email) {
 		return userService.findByEmail(email);
 	}
+	@GetMapping("/findbyid/{userId}")
+	public AppUser findById(@PathVariable Long userId) {
+		return userService.findById(email);
+	}
 
 }
