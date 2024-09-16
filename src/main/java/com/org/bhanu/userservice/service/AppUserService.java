@@ -85,5 +85,9 @@ public class AppUserService {
 	public AppUser findByEmail(String email) {
 		return userRepository.findByEmail(email).get();
 	}
+
+	public AppUser findById(Long userId){
+		return userRepository.findById(userId).get();
+	}
 	
 }
